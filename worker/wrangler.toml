@@ -1,0 +1,11 @@
+name = "maya-calendar-api"
+main = "src/index.ts"
+compatibility_date = "2024-12-01"
+
+# Secrets are set via `wrangler secret put <KEY>`
+# LINE_CHANNEL_SECRET
+# LINE_CHANNEL_ACCESS_TOKEN
+# LARK_APP_ID
+# LARK_APP_SECRET
+# LARK_BASE_APP_TOKEN
+# LARK_BASE_TABLE_ID
