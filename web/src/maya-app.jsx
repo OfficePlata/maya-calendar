@@ -279,9 +279,9 @@ export default function App(){
 
       {/* Input */}
       <div style={{background:"#141927",borderRadius:12,padding:16,border:"1px solid #1E293B",marginBottom:14}}>
-        <div style={{marginBottom:8}}><label style={{fontSize:9,color:"#64748B",fontWeight:600}}>名前</label><input placeholder="ささ" value={nm} onChange={e=>setNm(e.target.value)} style={{width:"100%",padding:9,borderRadius:8,background:"#0B0F1A",border:"1px solid #1E293B",color:"#F1F5F9",fontSize:14,fontWeight:600,textAlign:"center",outline:"none",boxSizing:"border-box",marginTop:3}}/></div>
+        <div style={{marginBottom:8}}><label style={{fontSize:9,color:"#64748B",fontWeight:600}}>名前</label><input placeholder="名前（任意）" value={nm} onChange={e=>setNm(e.target.value)} style={{width:"100%",padding:9,borderRadius:8,background:"#0B0F1A",border:"1px solid #1E293B",color:"#F1F5F9",fontSize:14,fontWeight:600,textAlign:"center",outline:"none",boxSizing:"border-box",marginTop:3}}/></div>
         <div style={{display:"flex",gap:6,marginBottom:10}}>
-          {[[yr,setYr,"年","1985",2],[mo,setMo,"月","12",1],[dy,setDy,"日","4",1]].map(([v,fn,l,ph,fl])=>
+          {[[yr,setYr,"年","1990",2],[mo,setMo,"月","1",1],[dy,setDy,"日","1",1]].map(([v,fn,l,ph,fl])=>
             <div key={l} style={{flex:fl}}><label style={{fontSize:9,color:"#64748B",fontWeight:600}}>{l}</label><input type="number" placeholder={ph} value={v} onChange={e=>fn(e.target.value)} style={{width:"100%",padding:9,borderRadius:8,background:"#0B0F1A",border:"1px solid #1E293B",color:"#F1F5F9",fontSize:16,fontWeight:600,textAlign:"center",outline:"none",boxSizing:"border-box",marginTop:3}}/></div>)}
         </div>
         <button onClick={go} style={{width:"100%",padding:11,borderRadius:10,border:"none",background:"linear-gradient(135deg,#F59E0B,#D97706)",color:"#0B0F1A",fontSize:14,fontWeight:700,cursor:"pointer",boxShadow:"0 4px 16px #F59E0B44"}}>🔮 診断する</button>
